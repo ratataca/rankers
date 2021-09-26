@@ -1,0 +1,58 @@
+{
+  "play": [
+    {
+      "playType": 0,
+      "playTitle": "1경기도민친목대회",
+      "period": "2021. 07. 02.",
+      "holdingPlace": "상설체육관",
+      "participantNum": "11/20",
+      "applicationPeriod":"2021. 07. 02. ~ 2021. 07. 02.",
+      "file" :""
+    },
+    {
+      "playType": 1,
+      "playTitle": "2경기도민친목대회",
+      "period": "2021. 03. 02.",
+      "holdingPlace": "상설체육관",
+      "participantNum": "11/20",
+      "applicationPeriod":"2021. 07. 02. ~ 2021. 07. 02.",
+      "file" :""
+    },
+    {
+      "playType": 0,
+      "playTitle": "3경기도민친목대회",
+      "period": "2021. 07. 21.",
+      "holdingPlace": "상설체육관",
+      "participantNum": "11/20",
+      "applicationPeriod":"2021. 07. 02. ~ 2021. 07. 02.",
+      "file" :""
+    },
+    {
+      "playType": 1,
+      "playTitle": "2경기도민친목대회",
+      "period": "2021. 07. 02.",
+      "holdingPlace": "상설체육관",
+      "participantNum": "11/20",
+      "applicationPeriod":"2021. 07. 02. ~ 2021. 07. 02.",
+      "file" :""
+    },
+    {
+      "playType": 2,
+      "playTitle": "2경기도민친목대회",
+      "perid": "2021. 07. 02.",
+      "holdingPlace": "상설체육관",
+      "participantNum": "11/20",
+      "applicationPeriod":"2021. 07. 02. ~ 2021. 07. 02.",
+      "file" :""
+    },
+    {
+      "playType": 0,
+      "playTitle": "0경기도민친목대회",
+      "perid": "2021. 07. 02.",
+      "holdingPlace": "상설체육관",
+      "participantNum": "11/20",
+      "applicationPeriod":"2021. 07. 02. ~ 2021. 07. 02.",
+      "file" :""
+    }
+  ]
+}

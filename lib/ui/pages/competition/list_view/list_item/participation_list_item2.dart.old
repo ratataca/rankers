@@ -1,0 +1,112 @@
+// import 'package:flutter/cupertino.dart';
+// import "package:flutter/material.dart";
+// import 'package:tennis_game_management/resources/colors.dart';
+// import 'package:tennis_game_management/ui/components/unit/divider/horizontal_divider.dart';
+//
+// class ParticipationListItem2 extends StatelessWidget {
+//   String idx = "";
+//   String name = "";
+//   int rank=0;
+//
+//   ParticipationListItem2({int idx=0, String name="", int rank=0}){
+//     this.idx=(idx+1).toString();
+//     this.name=name;
+//     this.rank=rank;
+//   }
+//
+//
+//
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return GestureDetector(
+//       onTap: (){
+//
+//
+//
+//
+//       },
+//       child: Container(
+//         child: Column(
+//           children: [
+//             Container(
+//               child: Row(
+//                 children: [
+//                   Container(
+//                     child:  Text(
+//                       this.idx,
+//                       style: TextStyle(
+//                         fontSize: 14,
+//                       ),
+//                     ),
+//                     alignment: Alignment.center,
+//                     width: 46,
+//                   ),
+//
+//                   // 이미지
+//                   // Container(
+//                   //   margin: new EdgeInsets.only(right: 16),
+//                   //   child:  GestureDetector(
+//                   //     onTap: ()  {
+//                   //       // Todo - 내 계정이면 세팅의 마이페이지, 아니면 조횐
+//                   //       // Navigator.pushNamed(context, '/setting');
+//                   //     },
+//                   //     child: ClipRRect(
+//                   //       borderRadius: new BorderRadius.circular(50.0),
+//                   //       // TODO- 이미지 압축을 하여 정사각형으로 만들기
+//                   //       child:CircleAvatar( backgroundImage: AssetImage("assets/img/my_img.jpg"), radius: 60.0, ),
+//                   //
+//                   //     ),
+//                   //   ),
+//                   //   height: 40,
+//                   //   width: 40,
+//                   //   color: Colors.transparent,
+//                   //
+//                   // ),
+//
+//                   Container(
+//                     child: Text(
+//                       this.name,
+//                       style: TextStyle(
+//                         fontSize: 16,
+//                       ),
+//                     ),
+//                     margin: EdgeInsets.only(top: 2),
+//                   ),
+//
+//                   Flexible(
+//                     child: Container(
+//                       child: Text(
+//                         this.rank.toString(),
+//                         style: TextStyle(
+//                             fontSize: 14,
+//                             fontWeight: FontWeight.bold,
+//                             color: FREE_BOARD_LIGHT_GREEN_COLOR
+//                         ),
+//                       ),
+//                       alignment: Alignment.centerRight,
+//                       width: double.infinity,
+//                       margin: EdgeInsets.only(right: 8),
+//                       // color: Colors.greenAccent,
+//                     ),
+//                     flex: 1,
+//                   ),
+//
+//                 ],
+//               ),
+//               margin: EdgeInsets.only(bottom: 14, top: 14),
+//             ),
+//             // HorizontalDivider(),
+//           ],
+//           crossAxisAlignment: CrossAxisAlignment.center,
+//         ),
+//         width: double.infinity,
+//         // height: 46,
+//         color: Colors.transparent,
+//       ),
+//     );
+//   }
+//
+// }
+//
+//

@@ -1,0 +1,158 @@
+import "package:flutter/material.dart";
+import 'package:tennis_game_management/components/unit/score/double_score.dart';
+import 'package:tennis_game_management/components/unit/score/single_score.dart';
+import 'package:tennis_game_management/resources/colors.dart';
+
+class MyInformationView extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+
+      // Components
+      child: Column(
+        children: [
+          
+          // 1. 닉네임 & 포인트
+          Container(
+            child: Row(
+              children: [
+
+                // 1.1. 닉네임
+                Container(
+                  child: Text(
+                      "Ratatca",
+                      style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    )
+                  ),
+                  margin: EdgeInsets.only(left: 16),
+                  // color: Colors.pink,
+
+                ),
+
+                // 1.2. 포인트
+                Container(
+                  child: Row(
+                    children: [
+                      Container(
+                        child: Image.asset("assets/img/icon_coin.png", width: 16, height: 16),
+                        margin: EdgeInsets.only(right: 2),
+                      ),
+                      Text("1,234", style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ))
+                    ],
+                  ),
+
+                  margin: EdgeInsets.only(right: 16),
+                )
+              ],
+
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            ),
+
+            height: 48,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(8),
+                  topRight: Radius.circular(8),
+              ),
+              color: BACKGROUND_GREEN_COLOR,
+              border: Border.all(
+                color: Colors.transparent,
+                width: 1,
+              ),
+            ),
+          ),
+
+          // 2. 등수, 세부정보(복식, 단식) 승패
+          Flexible(
+            child: Container(
+              child: Row(
+                children: [
+                  // 2. 1. 등수
+                  Container(
+                    child: Row(
+                      children: [
+                        // 2. 1. 1. 등수
+                        Text(
+                          "100000",
+                          style: TextStyle(
+                            fontSize: 36,
+                            fontWeight: FontWeight.bold
+                          ),
+                        ),
+
+                        // 2. 1. 1. 변화율
+                        Container(
+                          child: Text("+3", style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.blue
+                          )),
+                          margin: EdgeInsets.only(left: 6, bottom: 6),
+                        ),
+                      ],
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                    ),
+
+                    width: 180,
+                    margin: EdgeInsets.only(
+                      left: 16,
+                      right: 16,
+                    ),
+                    // color: Colors.green,
+                  ),
+
+                  // 2. 2. 세부정보 - 복식, 단식 승패
+                  Container(
+                    child: Column(
+                      children: [
+                        // 2. 2. 1. 복식
+                        DoubleScore(),
+
+                        // 2. 2. 2. 단식
+                        SingleScore(),
+                      ],
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                    ),
+
+                    width: 160,
+                    // color: Colors.red,
+                    padding: EdgeInsets.only(left: 8),
+                  ),
+                ],
+
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              ),
+            ),
+
+            flex:1
+          )
+        ],
+      ),
+
+      // Styling
+      margin: EdgeInsets.only(left: 12, right: 12, top: 8, bottom: 16),
+      width: double.infinity,
+      height: 130,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(8.0),
+        color: Colors.white,
+        boxShadow: [
+          BoxShadow(
+            color: Color.fromARGB(255, 194, 194, 194),
+            offset: Offset(0.0, 1.5), //(x,y)
+            blurRadius: 1.5,
+          ),
+        ],
+      ),
+    );
+  }
+}

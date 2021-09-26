@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1041872302393",
+    "project_id": "rankers2021-f4cc1",
+    "storage_bucket": "rankers2021-f4cc1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1041872302393:android:9cd8d06cc60e4f8b4d38e8",
+        "android_client_info": {
+          "package_name": "com.maysix.tgm.tennis_game_management"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1041872302393-nilae21idslf92j30d3n1robl4j7ai9a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.maysix.tgm.tennis_game_management",
+            "certificate_hash": "0e5942878e872cf662d63393f7de8443baf81f41"
+          }
+        },
+        {
+          "client_id": "1041872302393-lv9mn1hub3hntlsi9b2347t2meo8n6r8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl6EZAOAigigBCUPAIi8G8bnNKYGIxurU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1041872302393-lv9mn1hub3hntlsi9b2347t2meo8n6r8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

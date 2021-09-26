@@ -1,0 +1,128 @@
+import 'package:flutter/cupertino.dart';
+import "package:flutter/material.dart";
+import 'package:tennis_game_management/components/competition/unit/event_icon/icon_state_outline.dart';
+import 'package:tennis_game_management/resources/colors.dart';
+
+Widget OpeningPlayItem(playTitle, period, holdingPlace,participantNum, applicationPeriod, testPeriod, testpartic, testparticipan, status){
+
+  // 승패 태그, vs, 경기결과(승패, 경기날짜)
+  return Container(
+    child: Row(
+      children: [
+        // 1. 대회명, 대회기간, 장소
+        Flexible(
+          child: Container(
+            child: Column(
+              children: [
+
+                // 1. 1. 대회명
+                Container(
+                  child: Text(
+                    "경기도민 친목 대회",
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                        color: FONT_DARK_GRAY_COLOR
+                    ),
+                  ),
+                  margin: EdgeInsets.only(top: 4),
+                ),
+
+                Column(
+                  children: [
+                    // 1. 2. 대회 기간
+                    Container(
+                      child: Text(
+                        "기간 : " + testPeriod,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                            fontSize: 12,
+                            color: FONT_DEFUALT_GRAY_COLOR
+
+                        ),
+                      ),
+                      margin: EdgeInsets.only(bottom: 2),
+                    ),
+
+                    // 1. 3. 장소
+                    Container(
+                      child: Text(
+                        "장소 : " + testpartic,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                            fontSize: 12,
+                            color: FONT_DEFUALT_GRAY_COLOR
+                        ),
+                      ),
+
+                    ),
+                  ],
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                ),
+
+              ],
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            ),
+            // color: Colors.green,
+          ),
+          flex: 4,
+        ),
+
+        // 2. 참여 인원
+        Flexible(
+          child: Container(
+            child: Column(
+              children: [
+                // 2. New / Hot icon & 참여인원
+
+                // 2. 1. New / Hot icon
+                Container(
+                  child: IconStateOutline(title: status,)
+                ),
+
+
+                // 2. 2. 참여인원
+                Row(
+                  children: [
+                    Icon(
+                      Icons.group_rounded,
+                      color: FONT_DARK_GRAY_COLOR,
+                      size: 18.0,
+                    ),
+
+                    Container(
+                      child: Text(
+                        testparticipan,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                            fontSize: 12,
+                            color: FONT_DEFUALT_GRAY_COLOR
+                        ),
+                      ),
+                      margin: EdgeInsets.only(left: 2),
+                    ),
+                  ],
+                  mainAxisAlignment: MainAxisAlignment.end,
+                ),
+              ],
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.end,
+            ),
+            // color: Colors.blue,
+            alignment: Alignment.bottomRight,
+          ),
+          flex: 1,
+        ),
+
+      ],
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    ),
+    height: 85,
+    // color: Colors.yellow,
+    padding: EdgeInsets.only(left: 8, top: 10, bottom: 10, right: 10,),
+    margin: EdgeInsets.only(bottom: 5),
+  );
+}

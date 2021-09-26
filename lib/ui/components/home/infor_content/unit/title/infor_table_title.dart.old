@@ -1,0 +1,68 @@
+
+import "package:flutter/material.dart";
+import 'package:tennis_game_management/components/unit/divider/content_divider.dart';
+
+
+class InforTableTitle extends StatelessWidget {
+  String title = "";
+
+  InforTableTitle({String title="", }){
+    this.title=title;
+
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Row(
+        children: [
+
+          // 단식. 복식 타이틀
+          Container(
+              child: Text(
+                this.title,
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.green
+                  // fontWeight: FontWeight.bold
+                ),
+              )
+          ),
+
+          // 몇승 몇패
+          Container(
+              child: Row(
+                children: [
+                  Container(
+                    child: Text(
+                      "120승",
+                      style: TextStyle(
+                        fontSize: 12,
+                      ),
+                    ),
+                    margin: EdgeInsets.only(right: 4),
+                  ),
+
+                  Container(
+                    child: Text(
+                      "20패",
+                      style: TextStyle(
+                        fontSize: 12,
+                      ),
+                    ),
+                  )
+                ],
+              )
+
+          )
+
+        ],
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      ),
+      height: 36,
+      alignment: Alignment.centerRight,
+      margin: EdgeInsets.only(right: 2),
+    );
+  }
+
+}

@@ -1,0 +1,87 @@
+import 'dart:ui';
+
+//폰트 색상
+const FONT_BLACK_COLOR = Color(0xff191414);
+const FONT_LIGHT_BLACK_COLOR = Color(0xff4a4e50);
+
+const FONT_WHITE_COLOR = Color(0xffffffff);
+
+
+const FONT_GRAY_COLOR2 = Color(0xffF5F5F5);
+
+const FONT_GRAY_COLOR = Color(0xffA0A0A0);
+
+const BLUE_OUTLINE = Color(0xff5e7c95);
+const GRAY_OUTLINE = Color(0xff8e9299);
+
+// const FONT_DEFUALT_GRAY_COLOR = Color(0xffA0A0A0);
+const FONT_LIGHT_GRAY_COLOR = Color(0xffF2F3F7);
+const FONT_DEFUALT_GRAY_COLOR = Color(0xff717074);
+const FONT_DARK_GRAY_COLOR = Color(0xff424242);
+
+
+const FONT_GREEN_COLOR = Color(0xff1FC58E);
+const FONT_LIGHT_GREEN_COLOR = Color(0xff2DC782);
+const FREE_BOARD_LIGHT_GREEN_COLOR = Color(0xff2daa71);
+const FONT_DARK_GREEN_COLOR = Color(0xff253B48);
+
+const FONT_RED_COLOR = Color.fromARGB(255, 236, 108, 84);
+const FONT_BLUE_COLOR = Color.fromARGB(255, 83, 173, 213);
+const FONT_SHADED_GREEN_COLOR = Color.fromARGB(255, 35, 98, 107);
+// const FONT_PUPLE_COLOR = Color.fromARGB(255, 252, 168, 84);
+const FONT_ORANGE_COLOR = Color.fromARGB(255, 226, 110, 14);
+
+
+const FONT_LIGHT_YELLOW_COLOR = Color(0xfffae62d);
+const FONT_DARK_YELLOW_COLOR = Color(0xfffdda47);
+
+
+//버튼 색상
+const BUTTON_GREEN_COLOR = Color(0xff1fc58e);
+const BUTTON_LIGHT_GREEN_COLOR = Color(0xff2dc782);
+const BUTTON_DARK_GREEN_COLOR = Color(0xff253B48);
+
+const BUTTON_LIGHT_YELLOW_COLOR = Color(0xfffae62d);
+const BUTTON_DARK_YELLOW_COLOR = Color(0xfffdda47);
+
+//배경 색상
+const BACKGROUND_WHITE_COLOR = Color(0xffffffff);
+
+const BACKGROUND_GREEN_COLOR = Color(0xb31fc58e);
+const BACKGROUND_LIGHT_GREEN_COLOR = Color(0xff2dc782);
+
+const BACKGROUND_GRAY_COLOR = Color(0x45253b48);
+
+const BACKGROUND_RED_COLOR = Color.fromARGB(235, 255, 89, 73);
+const BACKGROUND_LIGHT_RED_COLOR = Color.fromARGB(75, 245, 155, 142);
+const BACKGROUND_LIGHT_RED_COLOR2 = Color.fromARGB(45, 245, 155, 142);
+
+
+const BACKGROUND_BLUE_COLOR = Color.fromARGB(235, 100, 161, 244);
+const BACKGROUND_LIGHT_BLUE_COLOR = Color.fromARGB(75, 100, 161, 244);
+const BACKGROUND_LIGHT_BLUE_COLOR2 = Color.fromARGB(45, 100, 161, 244);
+
+const SUB_BACKGROUND_GREEN_COLOR = Color.fromARGB(255, 153, 229, 80);
+const SUB_BACKGROUND_LIGHT_GREEN_COLOR = Color.fromARGB(47, 108, 190, 165);
+const SUB_BACKGROUND_LIGHT_GREEN_COLOR2 = Color.fromARGB(8, 108, 190, 165);
+
+const BACKGROUND_ORANGE_COLOR = Color.fromARGB(255, 236, 127, 84);
+
+// other
+const FONT_NEW_COLOR = Color.fromARGB(235, 255, 89, 73);
+
+
+
+
+
+const BACKGROUND_GREEN_TEST2 = Color.fromARGB(255, 250, 250, 250);
+const BACKGROUND_GREEN_205072 = Color.fromARGB(255, 32, 80, 114);
+const BACKGROUND_GREEN_329D9C = Color.fromARGB(255, 50, 157, 156);
+const BACKGROUND_GREEN_56c596 = Color.fromARGB(255, 86, 197, 150);
+const BACKGROUND_GREEN_7be495 = Color.fromARGB(255, 123, 228, 149);
+const BACKGROUND_GREEN_7be4952 = Color.fromARGB(105, 123, 228, 149);
+const BACKGROUND_GREEN_cff4d2 = Color.fromARGB(255, 207, 244, 210);
+
+
+
+
